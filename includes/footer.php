@@ -6,5 +6,6 @@
             por Diego Lipa <?= date('Y'); ?> 
         </small>
     </footer>
+    
 </body>
 </html>

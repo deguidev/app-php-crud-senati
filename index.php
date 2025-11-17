@@ -31,13 +31,21 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <td>
           <div style="display: flex;">
             <a href="delete.php?id_producto=<?= $item["id_producto"] ?>" type="button" class="mx-2 btn btn-outline-danger">🗑️</a>
-            <a type="button" class="mx-2 btn btn-outline-info">🖋️</a>
+            <a href="update.php?id_producto=<?= $item["id_producto"] ?>" type="button" class="mx-2 btn btn-outline-info">🖋️</a>
           </div>
         </td>
       </tr>
     <?php endforeach; ?>
   </tbody>
 </table>
+
+<!-- <script>
+  Swal.fire({
+    title: "Producto Guardado",
+    text: "Producto Registrado Correctamente",
+    icon: "success"
+  }).then(()=>window.location='index.php');
+</script> -->
 
 
 
